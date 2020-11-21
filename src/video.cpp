@@ -12,7 +12,7 @@ Video::Video()
     duracion = 0;
 }
 
-Video::Video(string t,string n,string g,int c,int a,int d)
+Video::Video(string t,string n,string g,int c,int a,int d, int id)
 {
     tipoVideo = t;
     nombreVideo = n;
@@ -20,8 +20,9 @@ Video::Video(string t,string n,string g,int c,int a,int d)
     calificacion = c;
     anioLanzamiento = a;
     duracion = d;
+    ID = id
 }
-Video::Video(string t,string n,string g ,int a,int d)
+Video::Video(string t,string n,string g ,int a,int d,int id)
 {
     tipoVideo = t;
     nombreVideo = n;
@@ -29,6 +30,7 @@ Video::Video(string t,string n,string g ,int a,int d)
     calificacion = 0;
     anioLanzamiento = a;
     duracion = d;
+    ID = id
 }
 
 void Video::setTipoVideo (string t){
@@ -70,7 +72,16 @@ int Video::getDuracion (){
 void Video::calificaVideo (int c){
     calificacion = c;
 }
+void Video::setID (int ID){
+    this->ID = ID
+}
+
+int Video::getID (){
+    return ID;
+}
 void Video::muestraDatos(){
+    cout << "El ID es:" << endl;
+    cout << ID;
     cout<<"el tipo de video es:"<<endl;
     cout<<tipoVideo<<endl;
     cout<<"El nombre del video es:"<<endl;
@@ -83,4 +94,5 @@ void Video::muestraDatos(){
     cout<<anioLanzamiento<<endl;
     cout<<"La duracion es"<<endl;
     cout<<duracion<<endl;
+
 }

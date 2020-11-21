@@ -17,6 +17,7 @@ class Pelicula : public Video
 
     private:
         int nominaciones;
+
 };
 
 #endif // PELICULA_H
