@@ -26,6 +26,8 @@ class Video
         int getCalificacion();
         int getAnioLanzamimento();
         int getDuracion();
+        void setID();
+        int getID();
 
 
     protected:
@@ -37,5 +39,6 @@ class Video
         int calificacion;
         int anioLanzamiento;
         int duracion;
+        int ID;
 };
 #endif // VIDEO_H
