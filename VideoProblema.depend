@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1605751545 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\video.cpp
+	"Video.h"
+	<iostream>
+
+1605751456 c:\users\alessandro\desktop\code blocks\videoproblema\include\video.h
+	<string>
+	<iostream>
+
+1605751545 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\pelicula.cpp
+	"Pelicula.h"
+	<iostream>
+
+1605751440 c:\users\alessandro\desktop\code blocks\videoproblema\include\pelicula.h
+	<Video.h>
+
+1605748858 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\serie .cpp
+	"Serie .h"
+
+1605751439 c:\users\alessandro\desktop\code blocks\videoproblema\include\serie .h
+	<Video.h>
+
+1605751440 source:c:\users\alessandro\desktop\code blocks\videoproblema\main.cpp
+	<iostream>
+	"Video.h"
+	"Pelicula.h"
+	"Serie .h"
+
