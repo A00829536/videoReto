@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+	// Versión modificada
     Video v1;
     Video v2;
     Pelicula p1;
