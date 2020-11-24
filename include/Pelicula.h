@@ -1,23 +1,18 @@
 #ifndef PELICULA_H
 #define PELICULA_H
 
-#include <Video.h>
+#include "video.h"
 
 
 class Pelicula : public Video
 {
-    public:
-        Pelicula();
-        virtual ~Pelicula();
-        void muestraDatos();
-        void setNominaciones();
-        int getNominaciones (int);
-
-    protected:
-
     private:
         int nominaciones;
-
+    public:
+        Pelicula();
+        void muestraDatos();
+        void setNominaciones(int);
+        int getNominaciones ();
 };
 
 #endif // PELICULA_H

@@ -1,4 +1,4 @@
-#include "Video.h"
+#include "video.h"
 #include <iostream>
 
 
@@ -20,8 +20,9 @@ Video::Video(string t,string n,string g,int c,int a,int d, int id)
     calificacion = c;
     anioLanzamiento = a;
     duracion = d;
-    ID = id
+    ID = id;
 }
+
 Video::Video(string t,string n,string g ,int a,int d,int id)
 {
     tipoVideo = t;
@@ -30,7 +31,7 @@ Video::Video(string t,string n,string g ,int a,int d,int id)
     calificacion = 0;
     anioLanzamiento = a;
     duracion = d;
-    ID = id
+    ID = id;
 }
 
 void Video::setTipoVideo (string t){
@@ -73,7 +74,7 @@ void Video::calificaVideo (int c){
     calificacion = c;
 }
 void Video::setID (int ID){
-    this->ID = ID
+    this->ID = ID;
 }
 
 int Video::getID (){

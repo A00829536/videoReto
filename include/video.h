@@ -10,8 +10,8 @@ class Video
 {
     public:
         Video();
+        Video(string,string,string,int,int,int,int);
         Video(string,string,string,int,int,int);
-        Video(string,string,string,int,int);
         virtual void muestraDatos();
         void calificaVideo(int);
         void setTipoVideo(string);
@@ -26,7 +26,7 @@ class Video
         int getCalificacion();
         int getAnioLanzamimento();
         int getDuracion();
-        void setID();
+        void setID(int);
         int getID();
 
 

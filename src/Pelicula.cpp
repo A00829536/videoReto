@@ -6,10 +6,6 @@ Pelicula::Pelicula()
     nominaciones = 0;
 }
 
-Pelicula::~Pelicula()
-{
-    //dtor
-}
 void Pelicula::muestraDatos(){
     cout << "el tipo de video es:" << endl;
     cout << getTipoVideo() << endl;
@@ -26,4 +22,11 @@ void Pelicula::muestraDatos(){
     cout << "la cantidad de nominaciones es:" << endl;
     cout << nominaciones << endl;
 
+}
+void Pelicula::setNominaciones(int n) {
+	nominaciones = n;
+}
+
+int Pelicula::getNominaciones() {
+	return nominaciones;
 }
