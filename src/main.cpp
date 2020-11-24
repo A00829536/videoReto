@@ -26,18 +26,27 @@ void inicializarVideos() {
 	Episodio episodio2s1;
 	episodio2s1.setNombreVideo("episodio2s1");
 	episodio2s1.setCalificacion(5);
+	Episodio episodio3s1;
+	episodio3s1.setNombreVideo("episodio3s1");
+	episodio3s1.setCalificacion(5);
 	Episodio episodio1s2;
 	episodio1s2.setNombreVideo("episodio1s2");
 	episodio1s2.setCalificacion(2);
 	Episodio episodio2s2;
 	episodio2s2.setNombreVideo("episodio2s2");
 	episodio2s2.setCalificacion(2);
+	Episodio episodio3s2;
+	episodio3s2.setNombreVideo("episodio3s2");
+	episodio3s2.setCalificacion(2);
 	// Añadir episodios a series
-	serie1.getEpisodios().push_back(episodio1s1);
-	cout << serie1.getEpisodios()[0].getNombreVideo() << endl;
-	serie1.getEpisodios().push_back(episodio2s1);
-	serie2.getEpisodios().push_back(episodio1s2);
-	serie2.getEpisodios().push_back(episodio2s2);
+	serie1.setEpisodio1(episodio1s1);
+	serie1.setEpisodio2(episodio2s1);
+	serie1.setEpisodio3(episodio3s1);
+	serie2.setEpisodio1(episodio1s2);
+	serie2.setEpisodio2(episodio2s2);
+	serie2.setEpisodio3(episodio3s2);
+
+
 	// Inicializar películas
 	Pelicula pelicula1;
 	pelicula1.setNombreVideo("pelicula1");
@@ -55,6 +64,7 @@ void inicializarVideos() {
 	peliculas.push_back(pelicula2);
 	peliculas.push_back(pelicula3);
 }
+
 
 void mostrarSerie(Serie s) {
 
@@ -106,7 +116,7 @@ void mostrarVideosCal() {
 }
 
 int main(int argc, char *argv[])
-{
+{   cout << "hola mundo " << endl;
 	inicializarVideos();
 	cout << "Elija una opción:" << endl;
 	cout << "1. Mostrar los videos con una determinada calificación" << endl;

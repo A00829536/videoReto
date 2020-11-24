@@ -6,17 +6,21 @@
 
 class Serie {
 	private:
-		vector<Episodio> episodios;
+		Episodio episodio1;
+		Episodio episodio2;
+		Episodio episodio3;
 		string nombreSerie;
 		string genero;
 	public:
-		vector<Episodio> getEpisodios();
-		int obtenerRating();
+		double obtenerRating();
 		void setNombreSerie(string);
 		string getNombreSerie();
 		void mostrarDatos();
 		string getGenero();
 		void setGenero(string);
+		void setEpisodio1(Episodio);
+		void setEpisodio2(Episodio);
+		void setEpisodio3(Episodio);
 };
 
 #endif /* ifndef SERIE_H */

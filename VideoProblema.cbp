@@ -36,12 +36,12 @@
 		</Compiler>
 		<Unit filename="include/Episodio.h" />
 		<Unit filename="include/Pelicula.h" />
-		<Unit filename="include/Serie .h" />
+		<Unit filename="include/Serie.h" />
 		<Unit filename="include/video.h" />
-		<Unit filename="main.cpp" />
 		<Unit filename="src/Episodio.cpp" />
 		<Unit filename="src/Pelicula.cpp" />
-		<Unit filename="src/Serie .cpp" />
+		<Unit filename="src/Serie.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Unit filename="src/video.cpp" />
 		<Extensions>
 			<code_completion />

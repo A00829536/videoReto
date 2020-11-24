@@ -1,18 +1,9 @@
 #include "Serie.h"
 
-vector<Episodio> Serie::getEpisodios() {
-	return episodios;
+double Serie::obtenerRating() {
+    double prom = (episodio1.getCalificacion() + episodio2.getCalificacion() + episodio3.getCalificacion())/3;
+    return prom;
 }
-int Serie::obtenerRating() {
-	int cal = 0;
-	for (int i = 0; i < episodios.size(); i++) {
-		cout << episodios[i].getCalificacion() << endl;
-		cal += episodios[i].getCalificacion();
-	}
-	int promedio = cal / episodios.size();
-	return promedio;
-}
-
 void Serie::setNombreSerie(string n) {
 	nombreSerie = n;
 }
@@ -34,4 +25,16 @@ void Serie::setGenero(string g) {
 
 string Serie::getGenero() {
 	return genero;
+}
+void Serie::setEpisodio1(Episodio episodio1){
+
+    this->episodio1 = episodio1;
+}
+void Serie::setEpisodio2(Episodio episodio2){
+
+    this->episodio2 = episodio2;
+}
+void Serie::setEpisodio3(Episodio episodio3){
+
+    this->episodio3 = episodio3;
 }

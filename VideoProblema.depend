@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1605751545 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\video.cpp
-	"Video.h"
+1606185052 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\video.cpp
+	"video.h"
 	<iostream>
 
-1605751456 c:\users\alessandro\desktop\code blocks\videoproblema\include\video.h
+1606185052 c:\users\alessandro\desktop\code blocks\videoproblema\include\video.h
 	<string>
 	<iostream>
 
-1605751545 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\pelicula.cpp
+1606185052 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\pelicula.cpp
 	"Pelicula.h"
 	<iostream>
 
-1605751440 c:\users\alessandro\desktop\code blocks\videoproblema\include\pelicula.h
-	<Video.h>
+1606185052 c:\users\alessandro\desktop\code blocks\videoproblema\include\pelicula.h
+	"video.h"
 
 1605748858 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\serie .cpp
 	"Serie .h"
@@ -25,4 +25,26 @@
 	"Video.h"
 	"Pelicula.h"
 	"Serie .h"
+
+1606185052 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\episodio.cpp
+	"Episodio.h"
+
+1606186724 c:\users\alessandro\desktop\code blocks\videoproblema\include\episodio.h
+	"video.h"
+	<string>
+
+1606186723 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\serie.cpp
+	"Serie.h"
+
+1606186724 c:\users\alessandro\desktop\code blocks\videoproblema\include\serie.h
+	"Episodio.h"
+	<vector>
+
+1606186724 source:c:\users\alessandro\desktop\code blocks\videoproblema\src\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	"video.h"
+	"Serie.h"
+	"Pelicula.h"
 
