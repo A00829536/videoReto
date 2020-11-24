@@ -17,6 +17,8 @@ void Serie::mostrarDatos() {
     cout<< nombreSerie << endl;
     cout<< "La calficación de la serie es:" << endl;
     cout<< obtenerRating() << endl;
+    cout<< "El género de la serie es:" << endl;
+    cout<< genero << endl;
 }
 
 void Serie::setGenero(string g) {
@@ -37,4 +39,16 @@ void Serie::setEpisodio2(Episodio episodio2){
 void Serie::setEpisodio3(Episodio episodio3){
 
     this->episodio3 = episodio3;
+}
+
+Episodio Serie::getEpisodio1() {
+	return episodio1;
+}
+
+Episodio Serie::getEpisodio2() {
+	return episodio2;
+}
+
+Episodio Serie::getEpisodio3() {
+	return episodio3;
 }

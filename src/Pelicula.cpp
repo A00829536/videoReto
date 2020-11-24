@@ -30,3 +30,9 @@ void Pelicula::setNominaciones(int n) {
 int Pelicula::getNominaciones() {
 	return nominaciones;
 }
+
+Pelicula Pelicula::operator+(const Pelicula& p) {
+	Pelicula temp;
+	temp.nominaciones = nominaciones + p.nominaciones;
+	return temp;
+}

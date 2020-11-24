@@ -10,6 +10,7 @@ class Pelicula : public Video
         int nominaciones;
     public:
         Pelicula();
+		Pelicula operator + (const Pelicula&);
         void muestraDatos();
         void setNominaciones(int);
         int getNominaciones ();

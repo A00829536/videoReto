@@ -21,6 +21,9 @@ class Serie {
 		void setEpisodio1(Episodio);
 		void setEpisodio2(Episodio);
 		void setEpisodio3(Episodio);
+		Episodio getEpisodio1();
+		Episodio getEpisodio2();
+		Episodio getEpisodio3();
 };
 
 #endif /* ifndef SERIE_H */
